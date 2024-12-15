@@ -1,16 +1,35 @@
-# This is a sample Python script.
+class Property:
+    def __init__(self, area: float, rooms: int, price: float, address: str):
+        self.area = area
+        self.rooms = rooms
+        self.price = price
+        self.address = address
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+    def __str__(self) -> str:
+        return f"Property(area={self.area}, rooms={self.rooms}, price={self.price}, address={self.address})"
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+class House(Property):
+    def __init__(self, area: float, rooms: int, price: float, address: str, plot: int):
+        super().__init__(area, rooms, price, address)
+        self.plot = plot
+
+    def __str__(self) -> str:
+        return f"House(area={self.area}, rooms={self.rooms}, price={self.price}, address={self.address}, plot={self.plot})"
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+class Flat(Property):
+    def __init__(self, area: float, rooms: int, price: float, address: str, floor: int):
+        super().__init__(area, rooms, price, address)
+        self.floor = floor
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    def __str__(self) -> str:
+        return f"Flat(area={self.area}, rooms={self.rooms}, price={self.price}, address={self.address}, floor={self.floor})"
+
+
+if __name__ == "__main__":
+    house = House(123.4, 4, 1923000, "Siemianowice ul. Bańgowska 44", 3)
+    flat = Flat(42, 3, 599999999, "Katowice ul. Bogucicka 42/4", 4)
+
+    print(house)
+    print(flat)
