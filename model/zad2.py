@@ -1,6 +1,5 @@
 from typing import List
-
-from zad1 import Student
+from model.zad1 import Student
 
 
 class Library:
