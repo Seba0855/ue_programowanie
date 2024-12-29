@@ -16,4 +16,3 @@ api_output = requests.get("https://api.openbrewerydb.org/v1/breweries")
 breweries = [Brewery(output) for output in api_output.json()]
 
 [print(brewery) for brewery in breweries]
-

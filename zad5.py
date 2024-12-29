@@ -10,5 +10,5 @@ def contains(values: list, value) -> bool:
     return value in values
 
 
-test_values = ["Grzegorz", 3, 12.12, 'A', True]
-print(contains(test_values, 'A'))
+test_values = ["Grzegorz", 3, 12.12, "A", True]
+print(contains(test_values, "A"))

@@ -7,7 +7,7 @@ powstałą listę.
 
 
 def list_operations(list_values1: list, list_values2: list) -> list:
-    return [num ** 3 for num in set(list_values1 + list_values2)]
+    return [num**3 for num in set(list_values1 + list_values2)]
 
 
 test_values = [5, 3, 12.12, 3, 2]
