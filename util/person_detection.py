@@ -1,34 +1,45 @@
 import cv2
-import glob as glob
-import os
+from numpy import ndarray
 
-hog = cv2.HOGDescriptor()
-hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
 
-image_paths = glob.glob('/Users/sebastian/Downloads/wwww.jpg')
-for image_path in image_paths:
-    image_name = image_path.split(os.path.sep)[-1]
-    image = cv2.imread(image_path)
-    if image.shape[1] < 400: # if image width < 400
-        (height, width) = image.shape[:2]
-        ratio = width / float(width) # find the
-        # width to height ratio
-        image = cv2.resize(image, (400, height*ratio)) # resize the image according to the width to height ratio
+def count_people(original_img: ndarray, grayscale_img: ndarray, debug_mode: bool = False) -> int:
+    hog = cv2.HOGDescriptor()
+    hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
 
-    img_gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    rects, weights = hog.detectMultiScale(grayscale_img, winStride=(2, 2), padding=(10, 10), scale=1.02)
 
-    rects, weights = hog.detectMultiScale(img_gray, winStride=(2, 2), padding=(10, 10), scale=1.02)
+    certain_counter = 0
 
     for i, (x, y, w, h) in enumerate(rects):
-        if weights[i] < 0.13:
-            continue
-        elif weights[i] < 0.3 and weights[i] > 0.13:
-            cv2.rectangle(image, (x, y), (x+w, y+h), (0, 0, 255), 2)
-        if weights[i] < 0.7 and weights[i] > 0.3:
-            cv2.rectangle(image, (x, y), (x+w, y+h), (50, 122, 255), 2)
         if weights[i] > 0.7:
-            cv2.rectangle(image, (x, y), (x+w, y+h), (0, 255, 0), 2)
+            certain_counter += 1
+            if debug_mode: cv2.rectangle(original_img, (x, y), (x + w, y + h), (0, 255, 0), 2)
+        else:
+            continue
 
-    cv2.imshow('HOG detection', image)
-    cv2.imwrite(f"../outputs/{image_name}", image)
-    cv2.waitKey(0)
+    if debug_mode:
+        cv2.imshow('HOG detection', original_img)
+        cv2.waitKey(0)
+
+    return certain_counter
+
+
+def resize_image(image: ndarray) -> ndarray:
+    if image.shape[1] < 400:  # if image width < 400
+        (height, width) = image.shape[:2]
+        ratio = width / float(height)  # find the width to height ratio
+        return cv2.resize(image, (400, int(height * ratio)))  # resize the image according to the width to height ratio
+    else:
+        return image
+
+
+def person_detection(path: str, debug_mode: bool = False):
+    image = cv2.imread(path)
+    image = resize_image(image)
+    img_gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    return count_people(original_img=image, grayscale_img=img_gray, debug_mode=debug_mode)
+
+
+if __name__ == "__main__":
+    people = person_detection("images.jpg", debug_mode=True)
+    print("found people: ", people)
