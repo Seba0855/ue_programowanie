@@ -4,12 +4,12 @@ from flask import request, json, Response
 from flask_restful import reqparse, Resource
 
 from src.model.InputType import InputType
-from src.queue.producer import enqueue_job
+from src.queue.producer import put_work_on_schedule
 
 
 def schedule_work(job_type: InputType, content: str) -> int:
-    job = enqueue_job(job_type, content)
-    return job.id
+    job = put_work_on_schedule(job_type, content)
+    return job.work_id
 
 
 class PeopleDetection(Resource):

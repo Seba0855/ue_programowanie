@@ -7,9 +7,8 @@ app = Flask(__name__)
 api = Api(app)
 
 api.add_resource(PeopleDetection, "/analyze_img")
-api.add_resource(WorkerRouting, '/jobs/<int:work_id>')
+api.add_resource(WorkerRouting, '/check/<int:work_id>')
 
-## TODO: Refactor
 if __name__ == "__main__":
     print("Starting server")
     app.run(debug=True)

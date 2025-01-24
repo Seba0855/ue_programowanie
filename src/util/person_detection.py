@@ -44,15 +44,15 @@ def person_detection(image: ndarray, debug_mode: bool = False):
 
 
 def get_image_ndarray_for_job(work: Work) -> ndarray:
-    if work.type == InputType.PATH:
+    if work.input_type == InputType.PATH:
         print("Reading image from path")
-        return cv2.imread(work.content)
-    if work.type == InputType.URL:
+        return cv2.imread(work.source)
+    if work.input_type == InputType.URL:
         print("Reading image from url")
-        return fetch_image_from_url(work.content)
-    if work.type == InputType.BASE64:
+        return fetch_image_from_url(work.source)
+    if work.input_type == InputType.BASE64:
         print("Reading image from base 64")
-        return base64_to_img(work.content)
+        return base64_to_img(work.source)
 
 
 if __name__ == "__main__":

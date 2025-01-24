@@ -3,26 +3,33 @@ from enum import StrEnum
 
 from src.model.InputType import InputType
 
+
 class WorkerStatus(StrEnum):
     WAITING = "waiting"
     IN_PROGRESS = "in_progress"
     FINISHED = "finished"
 
+
 @dataclass
 class Work:
-    FIELD_NAMES = ["id", "status", "type", "content", "result"]
-    FIELD_COUNT = len(FIELD_NAMES)
+    CSV_HEADER = ["work_id", "input_type", "status", "found_people", "image_source"]
 
-    id: int
-    type: InputType
-    content: str
-    status: WorkerStatus = WorkerStatus.WAITING
-    result: str = ""
+    work_id: int
+    input_type: InputType
+    source: str
+    work_status: WorkerStatus = WorkerStatus.WAITING
+    found_people: str = ""
+
+    def to_csv(self) -> list[str]:
+        return list(map(str, [self.work_id, self.input_type, self.work_status, self.found_people, self.source]))
 
     @staticmethod
     def from_csv(iterable: list[str]) -> "Work":
-        assert len(iterable) == Work.FIELD_COUNT
-        return Work(int(iterable[0]), InputType(iterable[2]), iterable[3], WorkerStatus(iterable[1]), iterable[4])
-
-    def to_csv(self) -> list[str]:
-        return list(map(str, [self.id, self.status, self.type, self.content, self.result]))
+        assert len(iterable) == len(Work.CSV_HEADER)
+        return Work(
+            work_id=int(iterable[0]),
+            input_type=InputType(iterable[1]),
+            work_status=WorkerStatus(iterable[2]),
+            found_people=iterable[3],
+            source=iterable[4]
+        )
