@@ -1,12 +1,8 @@
-import time
-from threading import Thread
-
 import cv2
 from numpy import ndarray
-
 from src.model.InputType import InputType
-from src.queue.consumer import start_consumer
-from src.model.job import Job
+from src.model.work import Work
+from src.util.file_reader import base64_to_img, fetch_image_from_url
 
 
 def count_people(original_img: ndarray, grayscale_img: ndarray, debug_mode: bool = False) -> int:
@@ -25,6 +21,7 @@ def count_people(original_img: ndarray, grayscale_img: ndarray, debug_mode: bool
             continue
 
     if debug_mode:
+        print("Found " + str(certain_counter) + " people.")
         cv2.imshow('HOG detection', original_img)
         cv2.waitKey(0)
 
@@ -40,40 +37,25 @@ def resize_image(image: ndarray) -> ndarray:
         return image
 
 
-def person_detection(path: str, debug_mode: bool = False):
-    image = cv2.imread(path)
+def person_detection(image: ndarray, debug_mode: bool = False):
     image = resize_image(image)
     img_gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     return count_people(original_img=image, grayscale_img=img_gray, debug_mode=debug_mode)
 
-## TODO: REFACTOR
-def get_job_image_path(job: Job) -> str:
-    if job.type == InputType.PATH:
-        return job.content
-    if job.type == InputType.URL:
-        return ""
-    if job.type == InputType.BASE64:
-        return ""
-    raise NotImplementedError(job.type)
 
-## TODO: REFACTOR NAMES
-def run_detection_consumer(tid: int) -> None:
-    def detection_task(job: Job) -> str:
-        print(f"[{tid}] Starting detection task for job id={job.id}")
-        path = get_job_image_path(job)
-        return str(person_detection(path))
-
-    start_consumer(detection_task)
+def get_image_ndarray_for_job(work: Work) -> ndarray:
+    if work.type == InputType.PATH:
+        print("Reading image from path")
+        return cv2.imread(work.content)
+    if work.type == InputType.URL:
+        print("Reading image from url")
+        return fetch_image_from_url(work.content)
+    if work.type == InputType.BASE64:
+        print("Reading image from base 64")
+        return base64_to_img(work.content)
 
 
 if __name__ == "__main__":
-    NUM_THREADS = 2
-
-    threads = [Thread(target=run_detection_consumer, args=(tid,)) for tid in range(NUM_THREADS)]
-
-    for thread in threads:
-        thread.start()
-        time.sleep(0.01)
-
-    for thread in threads:
-        thread.join()
+    url = "https://img.freepik.com/free-photo/people-posing-together-registration-day_23-2149096794.jpg"
+    image_from_url = fetch_image_from_url(url)
+    person_detection(image_from_url, debug_mode=True)

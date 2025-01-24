@@ -1,3 +1,318 @@
+GET http://localhost:5000/analyze_img?url=https://img.freepik.com/free-photo/people-posing-together-registration-day_23-2149096794.jpg
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-24T220532.202.html
+
+###
+
+GET http://localhost:5000/analyze_img?url=https://img.freepik.com/free-photo/people-posing-together-registration-day_23-2149096794.jpg
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-24T220346.500.html
+
+###
+
+GET http://localhost:5000/analyze_img?url=https://img.freepik.com/free-photo/people-posing-together-registration-day_23-2149096794.jpg
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-24T220309.500.html
+
+###
+
+GET http://localhost:5000/jobs/1
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-24T220303.200.html
+
+###
+
+GET http://localhost:5000/analyze_img?path=C:\Users\Sebastian\Desktop\Studia\Zaawansowane programowanie\ue_programowanie\res\tokyo2.jpg
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-24T220222.202.html
+
+###
+
+GET http://localhost:5000/analyze_img?url=https://img.freepik.com/free-photo/people-posing-together-registration-day_23-2149096794.jpg
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-24T215838.400.html
+
+###
+
+GET http://localhost:5000/jobs/0
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-24T215827.200.html
+
+###
+
+GET http://localhost:5000/analyze_img?path=C:\Users\Sebastian\Desktop\Studia\Zaawansowane programowanie\ue_programowanie\res\tokyo2.jpg
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-24T215803.202.html
+
+###
+
+GET http://localhost:5000/jobs/2
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-24T215348.200.html
+
+###
+
+GET http://localhost:5000/jobs/2
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-24T215347.200.html
+
+###
+
+GET http://localhost:5000/jobs/2
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-24T215344.200.html
+
+###
+
+GET http://localhost:5000/analyze_img?path=C:\Users\Sebastian\Desktop\Studia\Zaawansowane programowanie\ue_programowanie\res\tokyo2.jpg
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-24T215100.202.html
+
+###
+
+GET http://localhost:5000/jobs/2
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-24T215056.200.html
+
+###
+
+GET http://localhost:5000/jobs/2
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-24T215045.200.html
+
+###
+
+GET http://localhost:5000/jobs/2
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-24T214919.500.html
+
+###
+
+GET http://localhost:5000/analyze_img?path=C:\Users\Sebastian\Desktop\Studia\Zaawansowane programowanie\ue_programowanie\res\tokyo2.jpg
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-24T214914.202.html
+
+###
+
+GET http://localhost:5000/analyze_img?url=https://img.freepik.com/free-photo/people-posing-together-registration-day_23-2149096794.jpg
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-24T195714.400.html
+
+###
+
+GET http://localhost:5000/jobs/1
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-24T184209.200.html
+
+###
+
+GET http://localhost:5000/analyze_img?path=C:\Users\Sebastian\Desktop\Studia\Zaawansowane programowanie\ue_programowanie\res\tokyo2.jpg
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-24T184200.202.html
+
+###
+
+GET http://localhost:5000/jobs/0
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-24T184153.200.html
+
+###
+
+GET http://localhost:5000/jobs/0
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-24T184132.200.html
+
+###
+
+GET http://localhost:5000/jobs/0
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-24T184124.200.html
+
+###
+
+GET http://localhost:5000/jobs/1
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-24T184120.404.html
+
+###
+
+GET http://localhost:5000/analyze_img?path=C:\Users\Sebastian\Desktop\Studia\Zaawansowane programowanie\ue_programowanie\res\tokyo2.jpg
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-24T184114.202.html
+
+###
+
+GET http://localhost:5000/jobs/1
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-24T183954.200.html
+
+###
+
+GET http://localhost:5000/jobs/1
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-24T183952.200.html
+
+###
+
+GET http://localhost:5000/jobs/0
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-24T183945.200.html
+
+###
+
+GET http://localhost:5000/analyze_img?path=C:\Users\Sebastian\Desktop\Studia\Zaawansowane programowanie\ue_programowanie\res\tokyo3.jpg
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-24T183943.202.html
+
+###
+
+GET http://localhost:5000/jobs/0
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-24T183939.200.html
+
+###
+
+GET http://localhost:5000/jobs/0
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-24T183938.200.html
+
+###
+
+GET http://localhost:5000/jobs/0
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-24T183933.200.html
+
+###
+
+GET http://localhost:5000/jobs/0
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-24T181640.200.html
+
+###
+
+GET http://localhost:5000/analyze_img?path=C:\Users\Sebastian\Desktop\Studia\Zaawansowane programowanie\ue_programowanie\res\tokyo3.jpg
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-24T181624.202.html
+
+###
+
+GET http://localhost:5000/jobs/10
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-24T181424.200.html
+
+###
+
+GET http://localhost:5000/analyze_img?path=C:\Users\Sebastian\Desktop\Studia\Zaawansowane programowanie\ue_programowanie\res\tokyo3.jpg
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-24T181406.202.html
+
+###
+
 GET http://localhost:5000/jobs/9
 User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
 Accept-Encoding: br, deflate, gzip, x-gzip
@@ -130,312 +445,6 @@ Accept-Encoding: br, deflate, gzip, x-gzip
 Accept: */*
 
 <> 2025-01-24T020327.202.html
-
-###
-
-GET http://localhost:5000/analyze_img?path=C:\Users\Sebastian\Desktop\Studia\Zaawansowane programowanie\ue_programowanie\res\tokyo3.jpg
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-01-24T020326-1.202.html
-
-###
-
-GET http://localhost:5000/analyze_img?path=C:\Users\Sebastian\Desktop\Studia\Zaawansowane programowanie\ue_programowanie\res\tokyo3.jpg
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-01-24T020326.202.html
-
-###
-
-GET http://localhost:5000/analyze_img?path=C:\Users\Sebastian\Desktop\Studia\Zaawansowane programowanie\ue_programowanie\res\tokyo3.jpg
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-01-24T020325-1.202.html
-
-###
-
-GET http://localhost:5000/analyze_img?path=C:\Users\Sebastian\Desktop\Studia\Zaawansowane programowanie\ue_programowanie\res\tokyo3.jpg
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-01-24T020325.202.html
-
-###
-
-GET http://localhost:5000/analyze_img?path=C:\Users\Sebastian\Desktop\Studia\Zaawansowane programowanie\ue_programowanie\res\tokyo3.jpg
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-01-24T020324.202.html
-
-###
-
-GET http://localhost:5000/analyze_img?path=C:\Users\Sebastian\Desktop\Studia\Zaawansowane programowanie\ue_programowanie\res\tokyo3.jpg
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-01-24T020323.202.html
-
-###
-
-GET http://localhost:5000/analyze_img?path=C:\Users\Sebastian\Desktop\Studia\Zaawansowane programowanie\ue_programowanie\res\tokyo3.jpg
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-01-24T020316.202.html
-
-###
-
-GET http://localhost:5000/analyze_img?path=C:\Users\Sebastian\Desktop\Studia\Zaawansowane programowanie\ue_programowanie\res\tokyo3.jpg
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-01-24T020105.202.html
-
-###
-
-GET http://localhost:5000/analyze_img?path=C:\Users\Sebastian\Desktop\Studia\Zaawansowane programowanie\ue_programowanie\res\tokyo3.jpg
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-01-24T015004.500.html
-
-###
-
-GET http://localhost:5000/analyze_img?path=C:\Users\Sebastian\Desktop\Studia\Zaawansowane programowanie\ue_programowanie\res\tokyo3.jpg
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-01-23T223250.500.html
-
-###
-
-GET http://localhost:5000/analyze_img?path=
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-01-23T223245.400.html
-
-###
-
-GET http://localhost:5000/analyze_img?path='C:\Users\Sebastian\Desktop\Studia\Zaawansowane programowanie\ue_programowanie\res\tokyo2.jpg'
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-01-23T223231.400.html
-
-###
-
-GET http://localhost:5000/analyze_img?path="C:\Users\Sebastian\Desktop\Studia\Zaawansowane programowanie\ue_programowanie\res\tokyo2.jpg"
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-01-23T223221.400.html
-
-###
-
-GET http://localhost:5000/analyze_img
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-01-23T222932.400.html
-
-###
-
-GET http://localhost:5000/analyze_img?path=
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-01-23T222921.500.html
-
-###
-
-GET http://localhost:5000/analyze_img?path=C:\Users\Sebastian\Desktop\Studia\Zaawansowane programowanie\ue_programowanie\res\tokyo2.jpg
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-01-23T222828.200.html
-
-###
-
-GET http://localhost:5000/analyze_img?path=C:\Users\Sebastian\Desktop\Studia\Zaawansowane programowanie\ue_programowanie\res\images.jpg
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-01-23T222818.200.html
-
-###
-
-GET http://localhost:5000/analyze_img?path=C:\Users\Sebastian\Desktop\Studia\Zaawansowane programowanie\ue_programowanie\res\gellibrand-street-crossing.jpg
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-01-23T222721.200.html
-
-###
-
-GET http://localhost:5000/analyze_img?path="C:\Users\Sebastian\Desktop\Studia\Zaawansowane programowanie\ue_programowanie\res\gellibrand-street-crossing.jpg"
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-01-23T222640.500.html
-
-###
-
-GET http://localhost:5000/analyze_img?path="C:\Users\Sebastian\Desktop\Studia\Zaawansowane programowanie\ue_programowanie\res\gellibrand-street-crossing.jpg"
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-01-23T222500.500.html
-
-###
-
-GET http://localhost:5000/analyze_img?path=""
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-01-23T222417.500.html
-
-###
-
-GET http://localhost:5000/analyze_img
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-01-23T222209.500.html
-
-###
-
-GET http://localhost:5000/analyze_img?path={path}
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-01-23T222150.404.html
-
-###
-
-GET http://localhost:5000/analyze_img?path={path}
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-01-23T221953.404.html
-
-###
-
-GET http://localhost:5000/hello
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-01-23T221948.200.json
-
-###
-
-GET http://localhost:5000/analyze_img?path={path}
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-01-23T221931.404.html
-
-###
-
-GET http://localhost:5000/analyze_img?path={path}
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-01-23T221845.404.html
-
-###
-
-GET http://localhost:5000/analyze_img?path=sdf
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-01-23T221825.404.html
-
-###
-
-GET http://localhost:5000/analyze_img?path={path}
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-01-23T221820.404.html
-
-###
-
-GET http://localhost:5000/analyze_img?path=C:\Users\Sebastian\Desktop\Studia\Zaawansowane programowanie\ue_programowanie\res\images.jpg
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-01-23T221810.404.html
-
-###
-
-GET http://localhost:5000/analyze_img?path="C:\Users\Sebastian\Desktop\Studia\Zaawansowane programowanie\ue_programowanie\res\images.jpg"
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-01-23T221744.404.html
-
-###
-
-GET http://localhost:5000/detect
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-01-23T221732.404.html
-
-###
-
-GET http://localhost:5000/detect?path="C:\Users\Sebastian\Desktop\Studia\Zaawansowane programowanie\ue_programowanie\res\images.jpg"
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-01-23T221713.404.html
-
-###
-
-GET http://localhost:5000/detect?path=C:\Users\Sebastian\Desktop\Studia\Zaawansowane programowanie\ue_programowanie\res\images.jpg
-User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-01-23T221649.404.html
 
 ###
 

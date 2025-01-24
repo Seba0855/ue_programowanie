@@ -4,12 +4,12 @@ from pathlib import Path
 import csv
 import os
 
-from src.model.job import Job, JobStatus
+from src.model.work import Work, WorkerStatus
 from src.util.constants import JOBS_FILE_NAME
 
 ## TODO: REFACTOR ALL
 
-def find_job(predicate: Callable[[Job], bool]) -> Job | None:
+def work_lookup(predicate: Callable[[Work], bool]) -> Work | None:
     path = Path(JOBS_FILE_NAME)
     if path.exists():
         with open(path, 'r') as f:
@@ -19,22 +19,23 @@ def find_job(predicate: Callable[[Job], bool]) -> Job | None:
                 if i == 0:
                     continue  # skip header
 
-                job = Job.from_csv(line)
+                job = Work.from_csv(line)
                 if predicate(job):
+                    print("found job")
                     return job
 
     return None
 
 
-def find_job_by_id(job_id: int) -> Job | None:
-    return find_job(lambda job: job.id == job_id)
+def find_work_by_id(job_id: int) -> Work | None:
+    return work_lookup(lambda job: job.id == job_id)
 
 
-def get_next_pending_job() -> Job | None:
-    return find_job(lambda job: job.status == JobStatus.PENDING)
+def get_next_waiting_work() -> Work | None:
+    return work_lookup(lambda work: work.status == WorkerStatus.WAITING)
 
 
-def update_job(job: Job) -> None:
+def update_work(job: Work) -> None:
     temp_file_path = ""
     with NamedTemporaryFile('w', newline='', delete=False) as temp:
         temp_file_path = temp.name
@@ -48,7 +49,7 @@ def update_job(job: Job) -> None:
                     writer.writerow(line)  # write header
                     continue
 
-                old_job = Job.from_csv(line)
+                old_job = Work.from_csv(line)
                 if old_job.id == job.id:
                     old_job = job
 
