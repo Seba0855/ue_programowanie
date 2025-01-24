@@ -1,5 +1,12 @@
+import time
+from threading import Thread
+
 import cv2
 from numpy import ndarray
+
+from src.model.InputType import InputType
+from src.queue.consumer import start_consumer
+from src.model.job import Job
 
 
 def count_people(original_img: ndarray, grayscale_img: ndarray, debug_mode: bool = False) -> int:
@@ -39,7 +46,34 @@ def person_detection(path: str, debug_mode: bool = False):
     img_gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     return count_people(original_img=image, grayscale_img=img_gray, debug_mode=debug_mode)
 
+## TODO: REFACTOR
+def get_job_image_path(job: Job) -> str:
+    if job.type == InputType.PATH:
+        return job.content
+    if job.type == InputType.URL:
+        return ""
+    if job.type == InputType.BASE64:
+        return ""
+    raise NotImplementedError(job.type)
+
+## TODO: REFACTOR NAMES
+def run_detection_consumer(tid: int) -> None:
+    def detection_task(job: Job) -> str:
+        print(f"[{tid}] Starting detection task for job id={job.id}")
+        path = get_job_image_path(job)
+        return str(person_detection(path))
+
+    start_consumer(detection_task)
+
 
 if __name__ == "__main__":
-    people = person_detection("../../res/images.jpg", debug_mode=True)
-    print("found people: ", people)
+    NUM_THREADS = 2
+
+    threads = [Thread(target=run_detection_consumer, args=(tid,)) for tid in range(NUM_THREADS)]
+
+    for thread in threads:
+        thread.start()
+        time.sleep(0.01)
+
+    for thread in threads:
+        thread.join()

@@ -1,7 +1,7 @@
 from flask import Flask
 from flask_restful import Api, Resource
 
-from src.routing.DetectionRouting import PeopleDetection
+from src.routing.DetectionRouting import PeopleDetection, JobsResource
 
 """
 3 API posiada 1 endpoint GET, który odczytuje zdjęcie z dysku i zwrac
@@ -31,6 +31,7 @@ class HelloWorld(Resource):
 
 api.add_resource(HelloWorld, "/hello")
 api.add_resource(PeopleDetection, "/analyze_img")
+api.add_resource(JobsResource, '/jobs/<int:job_id>')
 
 if __name__ == "__main__":
     print("Starting server")
