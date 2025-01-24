@@ -46,7 +46,7 @@ class PeopleDetection(Resource):
         print(f"Scheduling {input_type} with content: {analyzed_content}")
         job_id = schedule_work(input_type, analyzed_content)
 
-        return Response(json.dumps(job_id), HTTPStatus.ACCEPTED)
+        return Response(json.dumps({"work_scheduled_id": job_id}), HTTPStatus.ACCEPTED)
 
     def post(self) -> Response:
         ns = self.parser.parse_args()
@@ -54,7 +54,7 @@ class PeopleDetection(Resource):
 
         job_id = schedule_work(InputType.BASE64, b64_img)
 
-        return Response(json.dumps(job_id), HTTPStatus.ACCEPTED)
+        return Response(json.dumps({"work_scheduled_id": job_id}), HTTPStatus.ACCEPTED)
 
     @staticmethod
     def create_request_parser() -> reqparse.RequestParser:
