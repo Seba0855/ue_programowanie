@@ -11,6 +11,13 @@ class Mode(Enum):
     INVERT = 3
 
 
+def prepareImage(path):
+    image = cv2.imread(path)
+    gray_scale = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    blur = cv2.GaussianBlur(gray_scale, (3, 3), 0)
+    return cv2.threshold(blur, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)[1]
+
+
 def transformToText(
     path: str,
     language=None,
@@ -42,18 +49,23 @@ def transformToText(
     return pytesseract.image_to_string(output, lang=language, config=f"--psm {psm}")
 
 
+def preprocessing(img):
+    # converted_img = cv2.medianBlur(img, 3)
+    # converted_img = cv2.threshold(cv2.GaussianBlur(img, (5, 5),0), 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)[1]
+    # converted_img = cv2.threshold(cv2.bilateralFilter(img, 5, 75, 75), 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)[1]
+    converted_img = cv2.threshold(cv2.medianBlur(img, 3), 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)[1]
+    # converted_img = cv2.adaptiveThreshold(cv2.GaussianBlur(img,(5, 5), 0), 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 31, 2)
+    # converted_img = cv2.adaptiveThreshold(cv2.bilateralFilter(img, 9, 75, 75), 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 31, 2)
+    # converted_img = cv2.adaptiveThreshold(cv2.medianBlur(img,3), 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 31, 2)
+    return converted_img
+
+
 if __name__ == "__main__":
-    captcha = transformToText("captcha.png", language="eng", show_result_image=False)
-    print(captcha)
-    mazda = transformToText(
-        "mazda.png", language="eng", show_result_image=False, mode=Mode.THRESH
-    )
-    print(mazda)
-    mcdonalds = transformToText(
-        "mcdonalds.png", language="eng", show_result_image=False
-    )
-    print(mcdonalds)
-    memorial = transformToText("memorial.png", language="eng", show_result_image=False)
-    print(memorial)
-    us = transformToText("us.png", language="eng", show_result_image=False)
-    print(us)
+    # captcha = transformToText("captcha.png", language="eng", show_result_image=True)
+    # print(captcha)
+    captcha_img = prepareImage("captcha.png")
+    preprocessed_captcha = preprocessing(captcha_img)
+    cv2.imshow("Captcha", captcha_img)
+    cv2.waitKey()
+    cv2.imshow("Captcha preprocessed", preprocessed_captcha)
+    cv2.waitKey()
