@@ -3,7 +3,7 @@ import time
 
 
 def add_job(file_name):
-    with open(filename, mode='a', newline='') as file:
+    with open(file_name, mode='a', newline='') as file:
         writer = csv.writer(file)
         writer.writerow(["pending"])  # Dodaje nową pracę o statusie "pending"
         print("Dodano nową pracę do kolejki.")

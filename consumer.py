@@ -4,7 +4,7 @@ import time
 
 def consume_jobs(file_name):
     while True:
-        with open(filename, mode='r') as file:
+        with open(file_name, mode='r') as file:
             reader = csv.reader(file)
             jobs = list(reader)
 
@@ -13,14 +13,14 @@ def consume_jobs(file_name):
                 print("Rozpoczynam pracę...")
                 jobs[i][0] = "in_progress"
 
-                with open(filename, mode='w', newline='') as file:
+                with open(file_name, mode='w', newline='') as file:
                     writer = csv.writer(file)
                     writer.writerows(jobs)
 
                 time.sleep(30)  # Symuluje czas wykonywania pracy
 
                 jobs[i][0] = "done"
-                with open(filename, mode='w', newline='') as file:
+                with open(file_name, mode='w', newline='') as file:
                     writer = csv.writer(file)
                     writer.writerows(jobs)
 
