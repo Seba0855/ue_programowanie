@@ -16,7 +16,7 @@ def run_detection_consumer(tid: int) -> None:
 
 if __name__ == "__main__":
     print("Starting detection consumer")
-    NUM_THREADS = 2
+    NUM_THREADS = 16
 
     threads = [Thread(target=run_detection_consumer, args=(tid,)) for tid in range(NUM_THREADS)]
 

@@ -1,5 +1,5 @@
 import random
-import urllib
+import urllib.request
 
 
 def make_it_burn(base_url: str, runs: int = 1_000):
@@ -12,7 +12,7 @@ def make_it_burn(base_url: str, runs: int = 1_000):
 
     for i in range(0, runs):
         random_image_index = random.randint(0, 3)
-        url = base_url + "analyze_img?path=C:\\Users\\Sebastian\\Downloads\\images.jpg"
+        url = base_url + "analyze_img?path=/Users/sebastian/ue_programowanie/res/images.jpg"
         result = urllib.request.urlopen(url).read()
 
         print(f"Successfully enqueued a new job with id {result}")

@@ -24,8 +24,12 @@ def put_work_on_schedule(job_type: InputType, content: str) -> Work:
             last_job = Work.from_csv(lines[-1])
             job_id = last_job.work_id + 1
 
-        job = Work(job_id, job_type, content)
-        writer.writerow(job.to_csv())
+        work = Work(
+            work_id=job_id,
+            input_type=job_type,
+            source=content
+        )
+        writer.writerow(work.to_csv())
 
         print(f"Successfully enqueued a new job with id={job_id}")
-        return job
+        return work

@@ -1,6 +1,6 @@
 import csv
 import io
-import urllib
+import urllib.request
 import cv2
 import base64
 import numpy as np
